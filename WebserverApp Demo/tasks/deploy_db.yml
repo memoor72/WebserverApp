@@ -11,7 +11,7 @@
 
     - name: Install PyMySQL
       apt:
-        name: python-pymysql
+        name: python-mysqldb
         state: present
 
     - name: Create Application Database
