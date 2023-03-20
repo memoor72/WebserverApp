@@ -12,7 +12,7 @@
     - name: Install PyMySQL
       apt:
         name: python-pymysql
-        state: started
+        state: present
 
     - name: Create Application Database
       mysql_db: name={{ db_name }} state=present
