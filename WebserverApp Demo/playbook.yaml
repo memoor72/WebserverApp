@@ -4,8 +4,7 @@
   tasks:
     - name: Install dependencies
       apt:
-        name: [ 'python-setuptools', 'python-all-dev', 'build-essential', 'python-pip', 'mysql-connector-python' ]
+        name: [ 'python-setuptools', 'python-all-dev', 'build-essential', 'python-pip', 'python3-mysql.connector' ]
         state: present
-
     - include: tasks/deploy_db.yml
     - include: tasks/deploy_web.yml
