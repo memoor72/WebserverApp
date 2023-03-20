@@ -11,7 +11,7 @@
 
     - name: Install PyMySQL
       apt:
-        name: python-mysqldb
+        name: python3-mysql.connector
         state: present
 
     - name: Create Application Database
