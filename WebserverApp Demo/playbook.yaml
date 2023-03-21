@@ -1,6 +1,7 @@
 -
   name: Deploy a web application
   become: true
+  ansible_become_password: R1ckm0dee$
   hosts: db_and_web_server1,db_and_web_server2
   tasks:
     - name: Install dependencies
