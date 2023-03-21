@@ -15,6 +15,15 @@
         state: present
 
     - name: Create Application Database
+      mysql_db:
+        login-path: /path/to/my.cnf
+        login_user: root
+        login_password: R1ckm0dee$
+        name: myappdb
+        state: present
+      become: true
+
+    - name: Create Application Database
       mysql_db: name={{ db_name }} state=present
 
     - name: Create Application DB User
