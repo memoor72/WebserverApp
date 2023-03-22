@@ -1,2 +1,5 @@
 ---
-# tasks file for python
+    - name: Install dependencies
+      apt:
+        name: [ 'python-setuptools', 'python-all-dev', 'build-essential', 'python-pip', 'python3-mysql.connector' ]
+        state: present
